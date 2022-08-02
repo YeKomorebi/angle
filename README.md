@@ -10,7 +10,7 @@ gituhbB站https://www.bilibili.com/video/BV1r3411F7kn?spm_id_from=333.337.search
 2.训练数据集  详见 https://zhuanlan.zhihu.com/p/501798155  
 3.翻墙软件  
 分享链接：http://pan.istartea.cn/#s/8XqY4kjg  
-访问密码：RvvHp
+访问密码：RvvHp  
 4.谷歌云端硬盘  
 https://drive.google.com/drive/my-drive
 可以在云端硬盘上面训练模型（用pycharm的cpu训练太慢了，用gpu的话环境安装太麻烦了）
