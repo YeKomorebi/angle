@@ -6,6 +6,6 @@ python环境配置请见python.md
 3.标注图片形成标注集 ---详见训练集标注.pdf  
 第二天：  
 1.github的学习，学习了vscode关联github，也开始了自己的github的管理编写   
-B站https://www.bilibili.com/video/BV1r3411F7kn?spm_id_from=333.337.search-card.all.click&vd_source=88dca4e938449bf106e3914c3beedefa  
+gituhbB站https://www.bilibili.com/video/BV1r3411F7kn?spm_id_from=333.337.search-card.all.click&vd_source=88dca4e938449bf106e3914c3beedefa  
 2.训练数据集  详见 https://zhuanlan.zhihu.com/p/501798155
 
