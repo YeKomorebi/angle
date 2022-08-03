@@ -1,0 +1,81 @@
+import cv2 as cv
+import numpy as np
+import matplotlib.pyplot as plt
+img=cv.imread("1.jpg",1)
+#cv.imshow("image",img)
+# cv.waitKey(0)
+# cv.destroyAllWindows()
+#print(type(img))
+#print(img.dtype)
+
+def cv_show(name,img1) : #图像的显示
+    cv.imshow(name, img1)
+    cv.waitKey(0)
+    cv.destroyAllWindows()
+
+def cv_video(path) :#打开video，路径为path
+    cap = cv.VideoCapture(path)
+    # 定义编解码器并创建VideoWriter对象
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            print("Can't receive frame (stream end?). Exiting ...")
+            break
+        # 写翻转的框架
+        cv.imshow('frame', frame)
+        if cv.waitKey(1)& 0xFF == 27:
+            break
+    # 完成工作后释放所有内容
+    cap.release()
+    cv.destroyAllWindows()
+def cv_camera0() :
+    cap = cv.VideoCapture(0)
+    # 定义编解码器并创建VideoWriter对象
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            print("Can't receive frame (stream end?). Exiting ...")
+            break
+        # 写翻转的框架
+        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+        cv.imshow('gray frame', gray)
+        if cv.waitKey(1)& 0xFF == 27:
+            break
+    # 完成工作后释放所有内容
+    cap.release()
+    cv.destroyAllWindows()
+def cv_camera1() :
+    cap = cv.VideoCapture(0)
+    # 定义编解码器并创建VideoWriter对象
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            print("Can't receive frame (stream end?). Exiting ...")
+            break
+        # 写翻转的框架
+        cv.imshow('frame', frame)
+        if cv.waitKey(1)& 0xFF == 27:
+            break
+    # 完成工作后释放所有内容
+    cap.release()
+    cv.destroyAllWindows()
+#people=img[0:50,0:200]
+#cv_show("peo",people)
+def cv_R(name,img2) : #只显示图像的R通道
+    img2[:, :, 0] = 0
+    img2[:, :, 1] = 0
+    cv_show(name, img2)
+def cv_G(name,img2) :
+    img2[:, :, 0] = 0
+    img2[:, :, 2] = 0
+    cv_show(name, img2)
+def cv_B(name,img2) :
+    img2[:, :, 2] = 0
+    img2[:, :, 1] = 0
+    cv_show(name, img2)
+#cv_camera0()
+#cv_video('output.avi')
+#img_dog = cv2.resize(img_dog, (500, 414))  裁剪图片尺寸
+#res = cv2.resize(img, (0, 0), fx=4, fy=4) fx，fy基于原有尺寸*相应的倍数
+#img_dog.shape
+#res = cv2.addWeighted(img_cat, 0.4, img_dog, 0.6, 0) 融合两个图片，权重0.4，0.6
