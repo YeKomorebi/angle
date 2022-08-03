@@ -16,3 +16,5 @@ gituhb学习链接：B站https://www.bilibili.com/video/BV1r3411F7kn?spm_id_from
 https://drive.google.com/drive/my-drive  
 可以在云端硬盘上面训练模型（用pycharm的cpu训练太慢了，用gpu的话环境安装太麻烦了）  
 yolo的python代码--yolo.ipynb
+第三天：  
+1.opencv的基本图形操作  
