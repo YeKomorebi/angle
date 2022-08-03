@@ -18,3 +18,7 @@ https://drive.google.com/drive/my-drive
 yolo的python代码--yolo.ipynb
 第三天：  
 1.opencv的基本图形操作  
+学习详见opencv中文文档  
+B站推荐课程：  
+https://www.bilibili.com/video/BV1PV411774y?spm_id_from=333.337.search-card.all.click&vd_source=02382ec5cd7a9c9b20669bb3a4ce9e61  
+
